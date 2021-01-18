@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: transparent;
@@ -26,6 +27,7 @@ nav li a {
   text-align: center;
   line-height: 40px;
   display: inline-block;
+  color: black;
 }
 
 a {
@@ -37,21 +39,10 @@ main section {
   position: relative;
 }
 
-section a {
-  width: 40vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-section img, section h2 {
-  max-width: 40vw;
-}
-
 #s1 {
   background-color: red;
 }
+
 
 #s2 {
   background-color: green;
@@ -59,4 +50,37 @@ section img, section h2 {
 
 #s3 {
   background-color: yellow;
+  color: green;
+}
+
+
+section a {
+  width: 40vw;
+}
+
+section a img {
+  max-width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section a h2 {
+  max-width: 40vw;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#s1 a h2, #s2 a h2 {
+  color: yellow;
+}
+
+#s3 a h2 {
+  color: green;
 }
