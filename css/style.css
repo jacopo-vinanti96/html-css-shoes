@@ -37,12 +37,16 @@ main section {
   position: relative;
 }
 
-section img, section h2 {
+section a {
   width: 40vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+section img, section h2 {
+  max-width: 40vw;
 }
 
 #s1 {
