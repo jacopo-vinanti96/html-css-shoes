@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+nav li {
+  margin: 15px;
+  display: inline-block;
+}
+
+nav li a {
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 2px black;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+main section {
+  height: 100vh;
+  position: relative;
+}
+
+section img, section h2 {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#s1 {
+  background-color: red;
+}
+
+#s2 {
+  background-color: green;
+}
+
+#s3 {
+  background-color: yellow;
+}
